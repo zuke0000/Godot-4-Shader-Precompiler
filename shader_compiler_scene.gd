@@ -34,10 +34,10 @@ func list_files_in_directory(path):
 
 @onready var mesh = $MeshInstance3D
 func cache_shaders():
-	pass
+	var mat = load(materials_path + materials[1]+".tres")
+	mesh.material_override = mat
 	## TODO
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	## TODO: 
 	pass

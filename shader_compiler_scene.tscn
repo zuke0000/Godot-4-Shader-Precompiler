@@ -1,8 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://4wyob6dvvk6n"]
+[gd_scene load_steps=4 format=3 uid="uid://4wyob6dvvk6n"]
 
 [ext_resource type="Script" path="res://shader_compiler_scene.gd" id="1_biwm4"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_45d14"]
+
+[sub_resource type="Environment" id="Environment_6ap8h"]
 
 [node name="ShaderCompilerScene" type="Node3D"]
 script = ExtResource("1_biwm4")
@@ -41,3 +43,8 @@ grow_vertical = 2
 [node name="Label" type="Label" parent="LoadingScreen/CenterContainer"]
 layout_mode = 2
 text = "Precompiling Shaders 0/50"
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_6ap8h")
