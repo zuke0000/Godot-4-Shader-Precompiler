@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://drjejs76ghp3p"]
+
+[ext_resource type="Shader" path="res://Scenes/waterfall_particles.gdshader" id="1_tcxhu"]
+[ext_resource type="Texture2D" uid="uid://c4571rm28rvqg" path="res://Assets/Waterfall/Bt5MSRp.png" id="2_qectx"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_tcxhu")
+shader_parameter/front_color = Color(1, 1, 1, 1)
+shader_parameter/back_color = Color(0, 0.862745, 0.92549, 1)
+shader_parameter/dissolve_tex = ExtResource("2_qectx")

@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://do13h1mpqalge"]
+
+[ext_resource type="Shader" path="res://Assets/Shaders/trail.gdshader" id="1_jdxcl"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_jdxcl")
+shader_parameter/gradientRemap = Vector4(0.708, -2.683, 0, 0.264)
+shader_parameter/beamRemap = Vector4(0.404, 1.12, 1, 200)
+shader_parameter/color1 = null
+shader_parameter/color2 = null
+shader_parameter/scale = Vector3(1, 50, 0)
+shader_parameter/threshold = 0.993
+shader_parameter/offset = 1.5
+shader_parameter/alpha = 1.0

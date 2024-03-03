@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://dv5wm3ye8nd25"]
+
+[ext_resource type="Shader" path="res://Scenes/flat_water.gdshader" id="1_ps23d"]
+[ext_resource type="Texture2D" uid="uid://dl33vyswsefje" path="res://Assets/Waterfall/YhNiKlc_d.png" id="2_cxpme"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_ps23d")
+shader_parameter/main_color = Color(0, 0.427451, 0.517647, 1)
+shader_parameter/intersection_color = Color(1, 1, 1, 1)
+shader_parameter/intersection_max_threshold = 0.5
+shader_parameter/displ_amount = 0.6
+shader_parameter/near = 0.15
+shader_parameter/far = 300.0
+shader_parameter/displ_tex = ExtResource("2_cxpme")

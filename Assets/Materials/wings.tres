@@ -1,0 +1,28 @@
+[gd_resource type="ShaderMaterial" load_steps=7 format=3 uid="uid://dinar8yufx5xp"]
+
+[ext_resource type="Shader" path="res://Assets/Shaders/wings.gdshader" id="1_sxe4c"]
+[ext_resource type="Texture2D" uid="uid://du6qvfgs2sx8i" path="res://Assets/Shaders/wings_textures/mask2.png" id="2_4a6le"]
+[ext_resource type="Texture2D" uid="uid://cl7o53ef1255u" path="res://Assets/Shaders/wings_textures/pattern2.png" id="3_al11i"]
+[ext_resource type="Texture2D" uid="uid://bp8bdu2c4s7w2" path="res://Assets/Shaders/wings_textures/wings2.png" id="4_vr13p"]
+
+[sub_resource type="Gradient" id="Gradient_7wsvj"]
+offsets = PackedFloat32Array(0, 0.258065, 1)
+colors = PackedColorArray(1, 1, 0, 1, 1, 0, 0, 1, 0.581033, 0.581033, 0.581033, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_1mvy8"]
+gradient = SubResource("Gradient_7wsvj")
+width = 512
+height = 512
+metadata/_snap_enabled = true
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_sxe4c")
+shader_parameter/displ_strengh = 0.3
+shader_parameter/wave_frequency = 2.0
+shader_parameter/speed = 1.0
+shader_parameter/emission_strengh = 0.0
+shader_parameter/wing_tex = ExtResource("4_vr13p")
+shader_parameter/mask_tex = ExtResource("2_4a6le")
+shader_parameter/pattern_tex = ExtResource("3_al11i")
+shader_parameter/gradient_tex = SubResource("GradientTexture2D_1mvy8")

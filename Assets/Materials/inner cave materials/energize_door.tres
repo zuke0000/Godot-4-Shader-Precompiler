@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://ce8hwye04d8d2"]
+
+[ext_resource type="Shader" path="res://Assets/Shaders/shield.gdshader" id="1_dptpb"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_dptpb")
+shader_parameter/albedo = Color(2, 2, 2, 1)
+shader_parameter/emission_color = Color(2, 2, 2, 1)
+shader_parameter/emission_amount = 0.75
+shader_parameter/rim_steepness = 0.981
+shader_parameter/uv_scale = null
+shader_parameter/uv_offset = null

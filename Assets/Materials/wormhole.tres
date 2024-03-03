@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://cgavf4c1yp818"]
+
+[ext_resource type="Shader" path="res://Assets/Shaders/wormhole.gdshader" id="1_7yfnj"]
+[ext_resource type="Texture2D" uid="uid://b0ii8pjxpf72w" path="res://Assets/KennyParticleImages/star_02.png" id="2_eqdcu"]
+[ext_resource type="Texture2D" uid="uid://bmlaxrdho4c3e" path="res://Assets/KennyParticleImages/light_03.png" id="3_7wpgb"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_7yfnj")
+shader_parameter/MainColor = Color(1, 0, 0, 1)
+shader_parameter/BackColor1 = Color(0, 0, 0, 1)
+shader_parameter/BackColor2 = Color(0.690196, 0.498039, 0, 1)
+shader_parameter/Brightness = 1.0
+shader_parameter/tex_frg_32 = ExtResource("3_7wpgb")
+shader_parameter/tex_frg_3 = ExtResource("2_eqdcu")

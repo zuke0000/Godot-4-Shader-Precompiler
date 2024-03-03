@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://jvtn1k7dcwpj"]
+
+[ext_resource type="Shader" path="res://Assets/Shaders/shield.gdshader" id="1_hpjmy"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_hpjmy")
+shader_parameter/albedo = Color(0, 0.662745, 0.988235, 1)
+shader_parameter/emission_color = Color(0, 0.85098, 1, 1)
+shader_parameter/emission_amount = 0.75
+shader_parameter/rim_steepness = 0.981
+shader_parameter/uv_scale = null
+shader_parameter/uv_offset = null

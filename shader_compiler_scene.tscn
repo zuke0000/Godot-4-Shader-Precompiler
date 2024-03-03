@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://4wyob6dvvk6n"]
+
+[ext_resource type="Script" path="res://shader_compiler_scene.gd" id="1_biwm4"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_45d14"]
+
+[node name="ShaderCompilerScene" type="Node3D"]
+script = ExtResource("1_biwm4")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+mesh = SubResource("SphereMesh_45d14")
+
+[node name="LoadingScreen" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="LoadingScreen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="LoadingScreen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="LoadingScreen/CenterContainer"]
+layout_mode = 2
+text = "Precompiling Shaders 0/50"

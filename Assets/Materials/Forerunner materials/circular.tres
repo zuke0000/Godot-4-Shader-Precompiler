@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://dpfkp5h6aednd"]
+
+[ext_resource type="Texture2D" uid="uid://poih6tjcnfkj" path="res://Assets/Forerunner Architecture/metal/connectable_floor_circular.png" id="1_mbtev"]
+[ext_resource type="Texture2D" uid="uid://ci3mflfg7vkyw" path="res://Assets/Forerunner Architecture/metal/connectable_floor_circular_bump.png" id="2_q8pmg"]
+
+[resource]
+albedo_texture = ExtResource("1_mbtev")
+normal_enabled = true
+normal_texture = ExtResource("2_q8pmg")
+uv1_scale = Vector3(0.9, 0.9, 0.9)
+uv1_triplanar = true

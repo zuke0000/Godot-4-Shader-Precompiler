@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://bqp8mrgwi2ujd"]
+
+[ext_resource type="Texture2D" uid="uid://dyfy7d71b50xm" path="res://Assets/Forerunner Architecture/metal/thick_wall_strips_riveted.png" id="1_wkuxv"]
+[ext_resource type="Texture2D" uid="uid://dmge4do522knm" path="res://Assets/Forerunner Architecture/metal/thick_wall_strips_riveted_bump.png" id="2_nvdao"]
+
+[resource]
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_wkuxv")
+normal_enabled = true
+normal_texture = ExtResource("2_nvdao")
+uv1_triplanar = true

@@ -1,0 +1,27 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://x2gjdc2sjvdj"]
+
+[ext_resource type="Shader" path="res://Assets/Shaders/eye_shader.gdshader" id="1_h6lpy"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_h6lpy")
+shader_parameter/look_right = 0.5
+shader_parameter/look_up = 0.5
+shader_parameter/eyelid_tl = 0.7
+shader_parameter/eyelid_tl_rotation = 0.0
+shader_parameter/eyelid_bl = 0.3
+shader_parameter/eyelid_bl_rotation = 0.0
+shader_parameter/eyelid_tr = 0.7
+shader_parameter/eyelid_tr_rotation = 0.0
+shader_parameter/eyelid_br = 0.3
+shader_parameter/eyelid_br_rotation = 0.0
+shader_parameter/eyelid_curve = 0.12
+shader_parameter/eyelid_top_position = Vector2(1.075, 0)
+shader_parameter/eyelid_bot_position = Vector2(0, -1.145)
+shader_parameter/pupil_position = Vector2(0, 0)
+shader_parameter/pupil_length = Vector2(0.1, 0.2)
+shader_parameter/eye_separation = 0.2
+shader_parameter/pupil_size = 0.1
+shader_parameter/eyelid_size = 0.23
+shader_parameter/color_light = Color(0.913725, 0, 0.686275, 1)
+shader_parameter/color_dark = Color(0, 0, 0, 1)

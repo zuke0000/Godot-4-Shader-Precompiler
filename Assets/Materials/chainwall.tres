@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://bbfydgs3selnb"]
+
+[ext_resource type="Texture2D" uid="uid://bmwuacbhd5iph" path="res://Assets/Materials/chainwall/ChainWall_edge.jpg" id="1_bvaxp"]
+[ext_resource type="Texture2D" uid="uid://bjl0v2ydm0587" path="res://Assets/Materials/chainwall/ChainWall_ao.jpg" id="2_50osf"]
+[ext_resource type="Texture2D" uid="uid://so2ohm035l2h" path="res://Assets/Materials/chainwall/ChainWall_height.jpg" id="3_4b2qd"]
+[ext_resource type="Texture2D" uid="uid://bqs2xmieedaa3" path="res://Assets/Materials/chainwall/ChainWall_metallic.jpg" id="4_gag3w"]
+[ext_resource type="Texture2D" uid="uid://bib5dt08gbbnb" path="res://Assets/Materials/chainwall/ChainWall_normal.jpg" id="5_jno04"]
+
+[resource]
+albedo_color = Color(0.709804, 0.709804, 0.709804, 1)
+albedo_texture = ExtResource("1_bvaxp")
+metallic = 1.0
+metallic_texture = ExtResource("4_gag3w")
+normal_enabled = true
+normal_texture = ExtResource("5_jno04")
+ao_enabled = true
+ao_texture = ExtResource("2_50osf")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_4b2qd")
+uv1_triplanar = true

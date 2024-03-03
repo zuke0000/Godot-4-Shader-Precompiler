@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://2uy1nmy4xkjv"]
+
+[ext_resource type="Texture2D" uid="uid://2p5yfb4lu0r7" path="res://Assets/Forerunner Architecture/metal/thick_strips_decorative.png" id="1_uurlx"]
+[ext_resource type="Texture2D" uid="uid://dlb20rcrja0xk" path="res://Assets/Forerunner Architecture/metal/thick_strips_decorative_bump.png" id="2_4fcxc"]
+
+[resource]
+albedo_texture = ExtResource("1_uurlx")
+normal_enabled = true
+normal_texture = ExtResource("2_4fcxc")

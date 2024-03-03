@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dc2kffs2ba6a0"]
+
+[ext_resource type="Texture2D" uid="uid://c13gt5jyjp76" path="res://Assets/rocket_blackmetal.png" id="1_y4mwk"]
+
+[resource]
+albedo_texture = ExtResource("1_y4mwk")
+metallic = 0.75
+metallic_specular = 0.0
+roughness = 0.0
+uv1_scale = Vector3(2, 2, 2)
+uv1_triplanar = true
